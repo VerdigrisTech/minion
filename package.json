@@ -5,12 +5,12 @@
   "author": "Andrew Jo <andrewjo@gmail.com>",
   "description": "Company minion to handle menial tasks",
   "dependencies": {
+    "googleapis": "^2.1.3",
     "hubot": "^2.16.0",
     "hubot-calculator": "^0.4.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.1",
     "hubot-google-translate": "^0.2.0",
-    "hubot-googleapi": "^0.2.3",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "^1.0.0",
     "hubot-maps": "0.0.2",
