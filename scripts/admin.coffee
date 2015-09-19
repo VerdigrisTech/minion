@@ -9,7 +9,7 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
-  capit
+  str = require 'underscore.string'
   googleapis = require 'googleapis'
   oauth_scopes = process.env.HUBOT_GOOGLE_SCOPES.split(',')
 
