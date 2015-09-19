@@ -7,6 +7,7 @@
 #   Uncomment the ones you want to try and experiment with.
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
+require('dotenv').load();
 
 module.exports = (robot) ->
   str = require 'underscore.string'
@@ -21,7 +22,7 @@ module.exports = (robot) ->
     process.env.HUBOT_GOOGLE_JWT_SUBJECT
   )
 
-  robot.respond /onboard (me )?(.*)$/i, (res) ->
+  robot.respond /onboard (me )?(.*)$/i, (msg) ->
     robot.emit 'google:authenticate', msg, (err, oauth) ->
       name = msg.match[2].split ' '
       first_name = name[0].toLowerCase()
@@ -35,10 +36,10 @@ module.exports = (robot) ->
         resource: {}
       }, (err, data) ->
         if err
-          res.send "There was a problem adding #{msg.match[2]}. Here are some" +
+          msg.reply "There was a problem adding #{msg.match[2]}. Here are some" +
             " details: #{err}"
         else
-          res.send "Okay, I've added #{msg.match[2]} to the system: #{data}"
+          msg.reply "Okay, I've added #{msg.match[2]} to the system: #{data}"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
