@@ -22,7 +22,7 @@
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.3.0",
     "hubot-slack-google-auth": "^0.1.1",
-    "hubot-victory": ">= 0.0.0",
+    "hubot-victory": "AndrewJo/hubot-victory",
     "hubot-youtube": "^1.0.1",
     "underscore.string": "^3.2.2"
   },
