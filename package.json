@@ -24,6 +24,7 @@
     "hubot-slack": "^3.3.0",
     "hubot-slack-google-auth": "^0.1.1",
     "hubot-victory": "AndrewJo/hubot-victory",
+    "hubot-yelp": "AndrewJo/hubot-yelp",
     "hubot-youtube": "^1.0.1",
     "moment-timezone": "^0.5.0",
     "underscore.string": "^3.2.2"
